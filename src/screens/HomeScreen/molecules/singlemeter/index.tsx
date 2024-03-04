@@ -1,6 +1,7 @@
 import {View, Text} from 'react-native';
 import React, {FC} from 'react';
 import styles from './styles';
+import colors from '../../../../components/constants/colors';
 
 interface props {
   item: any;
@@ -14,15 +15,17 @@ const SingleMeter: FC<props> = ({activeIndex, index, item}) => {
   return (
     <View style={styles.container}>
       <View style={[isCmValue ? styles.line : styles.subline]} />
-      {isCmValue && (
-        <Text
-          style={[
-            styles.title,
-            {color: activeIndex === index ? 'red' : 'gray'},
-          ]}>
-          {item}
-        </Text>
-      )}
+      <View>
+        {isCmValue && (
+          <Text
+            style={[
+              styles.title,
+              {color: activeIndex === index ? colors.red : colors.gray},
+            ]}>
+            {item}
+          </Text>
+        )}
+      </View>
     </View>
   );
 };

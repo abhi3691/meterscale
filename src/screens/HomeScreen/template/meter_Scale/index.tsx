@@ -17,7 +17,7 @@ const MeterScale = () => {
   const [activeIndex, setAtvieIndex] = useState<number>(0);
 
   const loadData = () => {
-    let data = [...Array(1000).fill('').keys()].map(value => value / 10);
+    let data = [...Array(500).fill('').keys()].map(value => value / 10);
     recyclerRef.current?.loadDataFromApi(data);
   };
 
@@ -41,9 +41,7 @@ const MeterScale = () => {
           emptyText="No Weight Found"
           emptyTextStyle={styles.empty}
           onScroll={e => {
-            let index = Math.round(
-              e.nativeEvent.contentOffset.y / (ScreenRatio.height / 50),
-            );
+            let index = Math.round(e.nativeEvent.contentOffset.y / 15);
             if (index !== -1) {
               changeIndex(index);
             }

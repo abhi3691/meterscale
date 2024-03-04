@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     flexDirection: 'row',
     alignItems: 'center',
-    height: ScreenRatio.height / 50,
+    height: 15,
   },
   title: {
     width: ScreenRatio.width / 10,
