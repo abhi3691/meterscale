@@ -4,9 +4,15 @@ import colors from '../../../../components/constants/colors';
 
 const styles = StyleSheet.create({
   container: {
+    height: ScreenRatio.height / 1.5,
+    width: ScreenRatio.width,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  scalecontainer: {
     height: ScreenRatio.height / 1.3,
     width: ScreenRatio.width / 3,
-    alignItems: 'center',
     paddingVertical: 10,
     borderColor: colors.black,
     borderWidth: 1,
