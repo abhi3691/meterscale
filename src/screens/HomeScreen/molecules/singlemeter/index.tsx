@@ -11,10 +11,15 @@ interface props {
 
 const SingleMeter: FC<props> = ({activeIndex, index, item}) => {
   const isCmValue = index % 10 === 0;
+  const is5mm = index % 5 === 0;
 
   return (
     <View style={styles.container}>
-      <View style={[isCmValue ? styles.line : styles.subline]} />
+      <View
+        style={[
+          isCmValue ? styles.line : is5mm ? styles.mmLine : styles.subline,
+        ]}
+      />
       <View>
         {isCmValue && (
           <Text

@@ -41,7 +41,7 @@ const MeterScale = () => {
           emptyText="No Weight Found"
           emptyTextStyle={styles.empty}
           onScroll={e => {
-            let index = Math.round(e.nativeEvent.contentOffset.y / 15);
+            let index = Math.round(e.nativeEvent.contentOffset.y / 13);
             if (index !== -1) {
               changeIndex(index);
             }

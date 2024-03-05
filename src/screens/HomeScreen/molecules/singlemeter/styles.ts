@@ -8,19 +8,24 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     flexDirection: 'row',
     alignItems: 'center',
-    height: 15,
+    height: 13,
   },
   title: {
     width: ScreenRatio.width / 10,
   },
   line: {
     height: 1,
-    width: ScreenRatio.width / 10,
+    width: ScreenRatio.width / 9,
+    backgroundColor: colors.black,
+  },
+  mmLine: {
+    height: 0.5,
+    width: ScreenRatio.width / 12,
     backgroundColor: colors.black,
   },
   subline: {
-    height: 0.5,
-    width: ScreenRatio.width / 20,
+    height: 0.3,
+    width: ScreenRatio.width / 25,
     backgroundColor: colors.black,
   },
 });
