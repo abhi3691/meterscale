@@ -4,10 +4,15 @@ import colors from '../../../../components/constants/colors';
 
 const styles = StyleSheet.create({
   container: {
-    height: ScreenRatio.height / 1.5,
+    height: ScreenRatio.height / 1.25,
     width: ScreenRatio.width,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  title: {
+    fontSize: 30,
+    color: colors.red,
+    fontWeight: 'bold',
   },
 
   scalecontainer: {
